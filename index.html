@@ -1,0 +1,2417 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>New Mexican Chile Rellenos: Complete Storyboard with History & Terroir</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    .frame-scroll::-webkit-scrollbar { height: 6px; }
+    .frame-scroll::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); border-radius: 4px; }
+    .frame-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen p-4 md:p-8 font-sans antialiased">
+  <div class="max-w-7xl mx-auto space-y-8">
+    
+    <!-- Hero Header -->
+    <header class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-xl">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-3">
+            <span>🌶️ Video Storyboard & Director's Cut with History Prologue</span>
+          </div>
+          <h1 class="text-2xl md:text-4xl font-extrabold tracking-tight text-white">
+            Cooking Chile Rellenos <span class="text-amber-400">New Mexican Style</span>
+          </h1>
+          <p class="text-slate-400 text-sm md:text-base mt-2 max-w-2xl">
+            Enriched with <strong>New Mexico agricultural history & Rio Grande terroir</strong>. Frame-by-frame analysis with duplicate removals for a cinematic, educational 4-minute YouTube video.
+          </p>
+        </div>
+
+        <!-- Key Metrics Cards -->
+        <div class="grid grid-cols-3 gap-3 bg-slate-950/60 border border-slate-800/80 p-4 rounded-xl">
+          <div class="text-center">
+            <span class="text-xs text-slate-400 block font-medium">Original Raw</span>
+            <span class="text-lg md:text-xl font-bold text-slate-200">06:51</span>
+            <span class="text-[10px] text-slate-500 block">28 total items</span>
+          </div>
+          <div class="text-center border-x border-slate-800 px-3">
+            <span class="text-xs text-emerald-400 block font-medium">Director's Cut</span>
+            <span class="text-lg md:text-xl font-bold text-emerald-400" id="stat-proposed">02:31</span>
+            <span class="text-[10px] text-emerald-500/80 block">21 tight scenes</span>
+          </div>
+          <div class="text-center">
+            <span class="text-xs text-amber-400 block font-medium">History Prologue</span>
+            <span class="text-lg md:text-xl font-bold text-amber-400">+14.0s</span>
+            <span class="text-[10px] text-amber-500/80 block">3 heritage visuals</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Filter Bar -->
+      <div class="mt-8 pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex flex-wrap gap-2 text-xs font-medium" id="filter-buttons">
+          <button onclick="filterScenes('all')" class="filter-btn active px-3.5 py-1.5 rounded-lg bg-emerald-600 text-white font-semibold transition" data-filter="all">
+            All Scenes (28)
+          </button>
+          <button onclick="filterScenes('history')" class="filter-btn px-3.5 py-1.5 rounded-lg bg-amber-950/40 text-amber-300 border border-amber-700/50 hover:bg-amber-900/50 transition" data-filter="history">
+            History & Terroir (3)
+          </button>
+          <button onclick="filterScenes('keep')" class="filter-btn px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition" data-filter="keep">
+            Keep / Trim (21)
+          </button>
+          <button onclick="filterScenes('remove')" class="filter-btn px-3.5 py-1.5 rounded-lg bg-rose-950/40 text-rose-300 border border-rose-800/50 hover:bg-rose-900/50 transition" data-filter="remove">
+            Flagged Duplicates (7)
+          </button>
+        </div>
+
+        <div class="text-xs text-slate-400">
+          Check/uncheck scenes to test different cut lengths live.
+        </div>
+      </div>
+    </header>
+
+    <!-- Visual Storyboard Timeline Grid -->
+    <main class="space-y-6" id="scenes-container">
+
+      <article class="scene-card border-amber-700/50 bg-amber-950/10 hover:border-amber-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="history" data-duration="5.0" data-orig-duration="5.0" id="scene-H1">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-amber-400 font-bold">SCENE H1</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Prologue: Terroir & Climate</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">The Rio Grande Terroir: Why Chile Thrives in NM</h2>
+              <span class="text-xs font-mono text-slate-500">history_01_rio_grande_terroir.jpg</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/50">✨ GENERATED HISTORY ASSET</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">5.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (1 image)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/history_01_terroir/frame_00_still.jpg" alt="Frame at still" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              still
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Visualizes the secret of New Mexico chile: 300+ days of intense high-desert sun, rich alluvial river soil, mountain snowmelt, and dramatic 30°F diurnal shifts (hot days create capsaicin/sugars; cool desert nights lock in flavor).</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Intro hook: Explains why New Mexico chile cannot be replicated anywhere else.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-amber-700/50 bg-amber-950/10 hover:border-amber-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="history" data-duration="4.5" data-orig-duration="4.5" id="scene-H2">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-amber-400 font-bold">SCENE H2</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Prologue: Culture & Roots</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Centuries of Heritage: Ristras & Adobe Preservation</h2>
+              <span class="text-xs font-mono text-slate-500">history_02_historic_ristras.jpg</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/50">✨ GENERATED HISTORY ASSET</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">4.5s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">4.5s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (1 image)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/history_02_ristras/frame_00_still.jpg" alt="Frame at still" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              still
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Pueblo and Spanish colonial farming traditions dating back to the late 1500s along the Camino Real. Strings of red chile ristras hung to sun-cure against adobe walls to sustain families through the winter.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Historical context: Explains how chile became the culinary backbone of New Mexico.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-amber-700/50 bg-amber-950/10 hover:border-amber-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="history" data-duration="4.5" data-orig-duration="4.5" id="scene-H3">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-amber-400 font-bold">SCENE H3</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Prologue: Agriculture Science</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Dr. Fabián García & The Modern NM Pod (1913)</h2>
+              <span class="text-xs font-mono text-slate-500">history_03_fabian_garcia_breeding.jpg</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/50">✨ GENERATED HISTORY ASSET</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">4.5s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">4.5s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (1 image)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/history_03_breeding/frame_00_still.jpg" alt="Frame at still" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              still
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Pioneering horticulturalist Dr. Fabián García at the New Mexico Agricultural Experiment Station bred 'New Mexico No. 9' in 1913, standardizing the thick flesh and balanced heat that made chile rellenos possible.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Ties directly into Scene 1 (the anatomy poster at the State Fair).
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="3.5" data-orig-duration="4.0" id="scene-1">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 1</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 1: Heritage & Roaster</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Chile Anatomy Poster at Fair</h2>
+              <span class="text-xs font-mono text-slate-500">IMG_3598.jpg</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">4.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">3.5s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (1 image)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_01_IMG_3598/frame_00_still.jpg" alt="Frame at still" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              still
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Grounds the video in New Mexico culture and pod anatomy with child at the Fair.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Keep as bridge from history into present-day.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="3.5" data-orig-duration="5.74" id="scene-2">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 2</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 1: Heritage & Roaster</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">State Fair Ribbon Produce Display</h2>
+              <span class="text-xs font-mono text-slate-500">20260919_153553.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">5.7s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">3.5s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (4 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_02_20260919_153553/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_02_20260919_153553/frame_01_2s.jpg" alt="Frame at 2.0s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              2.0s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_02_20260919_153553/frame_02_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_02_20260919_153553/frame_03_5s.jpg" alt="Frame at 5.0s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              5.0s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">State fair ribbons & prize chile pods establish authentic NM pride.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Trim from 5.7s to 3.5s.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="4.5" data-orig-duration="16.14" id="scene-3">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 3</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 2: Sourcing Ingredients</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Mexican Market Spices Aisle 1</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_130700.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">16.1s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">4.5s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (6 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_03_20260920_130700/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_03_20260920_130700/frame_01_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_03_20260920_130700/frame_02_6s.jpg" alt="Frame at 6.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              6.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_03_20260920_130700/frame_03_9s.jpg" alt="Frame at 9.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              9.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_03_20260920_130700/frame_04_12s.jpg" alt="Frame at 12.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              12.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_03_20260920_130700/frame_05_15s.jpg" alt="Frame at 15.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              15.5s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Establishes Mexican market atmosphere (Jamaica, spices).</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Trim from 16.1s to 4.5s.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-rose-900/40 hover:border-rose-700/60 bg-slate-900/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="remove" data-duration="0.0" data-orig-duration="10.24" id="scene-4">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox"  onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 4</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 2: Sourcing Ingredients</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Mexican Market Spices Aisle 2</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_130720.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/30">REMOVE (DUPLICATE)</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">10.2s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">0.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (4 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_04_20260920_130720/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_04_20260920_130720/frame_01_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_04_20260920_130720/frame_02_6s.jpg" alt="Frame at 6.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              6.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_04_20260920_130720/frame_03_9s.jpg" alt="Frame at 9.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              9.5s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Duplicate take of Scene 3 showing the same shelves.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 CUT completely (saves 10.2s of repetition).
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="3.5" data-orig-duration="4.0" id="scene-5">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 5</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 2: Sourcing Ingredients</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Market Dried Red Chile Wall</h2>
+              <span class="text-xs font-mono text-slate-500">IMG_3612.jpg</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">4.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">3.5s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (1 image)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_05_IMG_3612/frame_00_still.jpg" alt="Frame at still" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              still
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Iconic wall of dried red chile pods for the sauce.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Keep (3.5s) to introduce red sauce concept.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-rose-900/40 hover:border-rose-700/60 bg-slate-900/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="remove" data-duration="0.0" data-orig-duration="3.44" id="scene-6">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox"  onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 6</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 1: Heritage & Roaster</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Roadside Chile Roaster 1</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_134721.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/30">REMOVE (DUPLICATE)</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">3.4s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">0.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (3 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_06_20260920_134721/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_06_20260920_134721/frame_01_2s.jpg" alt="Frame at 2.0s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              2.0s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_06_20260920_134721/frame_02_2s.jpg" alt="Frame at 2.94s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              2.94s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Shaky wide angle of roasters before flames start.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 CUT (Scene 7 has vastly superior flame action).
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="6.0" data-orig-duration="7.15" id="scene-7">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 7</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 1: Heritage & Roaster</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Roadside Chile Roaster Flames</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_135042.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">7.2s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">6.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (5 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_07_20260920_135042/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_07_20260920_135042/frame_01_2s.jpg" alt="Frame at 2.0s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              2.0s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_07_20260920_135042/frame_02_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_07_20260920_135042/frame_03_5s.jpg" alt="Frame at 5.0s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              5.0s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_07_20260920_135042/frame_04_6s.jpg" alt="Frame at 6.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              6.5s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Roaring roaster drums spinning over propane flames!</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Keep hero flames & roaring audio (6.0s).
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="3.5" data-orig-duration="4.0" id="scene-8">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 8</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 1: Heritage & Roaster</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Holding Giant Sack of Roasted Chile</h2>
+              <span class="text-xs font-mono text-slate-500">IMG_3621.jpg</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">4.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">3.5s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (1 image)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_08_IMG_3621/frame_00_still.jpg" alt="Frame at still" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              still
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Proudly holding the giant clear sack of freshly roasted chiles by car.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Keep as celebratory milestone (3.5s).
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="5.0" data-orig-duration="27.45" id="scene-9">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 9</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 3: Prep & Peeling</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Steaming Chiles Inside Sack</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_170900.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">27.4s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (10 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_09_20260920_170900/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_09_20260920_170900/frame_01_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_09_20260920_170900/frame_02_6s.jpg" alt="Frame at 6.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              6.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_09_20260920_170900/frame_03_9s.jpg" alt="Frame at 9.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              9.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_09_20260920_170900/frame_04_12s.jpg" alt="Frame at 12.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              12.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_09_20260920_170900/frame_05_15s.jpg" alt="Frame at 15.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              15.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_09_20260920_170900/frame_06_18s.jpg" alt="Frame at 18.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              18.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_09_20260920_170900/frame_07_21s.jpg" alt="Frame at 21.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              21.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_09_20260920_170900/frame_08_24s.jpg" alt="Frame at 24.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              24.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_09_20260920_170900/frame_09_26s.jpg" alt="Frame at 26.95s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              26.95s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Steam rising inside roasted chile sack.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Trim from 27.5s down to 5.0s for quick atmospheric punch.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-rose-900/40 hover:border-rose-700/60 bg-slate-900/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="remove" data-duration="0.0" data-orig-duration="3.0" id="scene-10">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox"  onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 10</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 3: Prep & Peeling</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Prep Table Setting</h2>
+              <span class="text-xs font-mono text-slate-500">IMG_3626.jpg</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/30">REMOVE (DUPLICATE)</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">3.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">0.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (1 image)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_10_IMG_3626/frame_00_still.jpg" alt="Frame at still" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              still
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Duplicate static angle of kitchen table before Scene 11.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 CUT (Scene 11 already introduces table with live action).
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="14.0" data-orig-duration="31.42" id="scene-11">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 11</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 3: Prep & Peeling</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Presenting Peeled Chile at Table</h2>
+              <span class="text-xs font-mono text-slate-500">IMG_3627.MOV</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">31.4s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">14.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (7 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_11_IMG_3627/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_11_IMG_3627/frame_01_5s.jpg" alt="Frame at 5.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              5.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_11_IMG_3627/frame_02_10s.jpg" alt="Frame at 10.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              10.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_11_IMG_3627/frame_03_15s.jpg" alt="Frame at 15.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              15.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_11_IMG_3627/frame_04_20s.jpg" alt="Frame at 20.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              20.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_11_IMG_3627/frame_05_25s.jpg" alt="Frame at 25.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              25.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_11_IMG_3627/frame_06_30s.jpg" alt="Frame at 30.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              30.5s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Presenting peeled chile & explaining technique (with dog in back).</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Trim from 31.4s to best 14s of dialogue.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-rose-900/40 hover:border-rose-700/60 bg-slate-900/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="remove" data-duration="0.0" data-orig-duration="3.39" id="scene-12">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox"  onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 12</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 4: Spanish Rice & Red Sauce</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Starting Rice Pot</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_180206.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/30">REMOVE (DUPLICATE)</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">3.4s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">0.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (3 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_12_20260920_180206/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_12_20260920_180206/frame_01_2s.jpg" alt="Frame at 2.0s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              2.0s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_12_20260920_180206/frame_02_2s.jpg" alt="Frame at 2.89s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              2.89s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Pot of plain water before rice or seasoning.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 CUT (redundant step).
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-rose-900/40 hover:border-rose-700/60 bg-slate-900/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="remove" data-duration="0.0" data-orig-duration="6.55" id="scene-13">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox"  onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 13</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 4: Spanish Rice & Red Sauce</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Simmering Rice</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_180319.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/30">REMOVE (DUPLICATE)</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">6.5s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">0.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (5 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_13_20260920_180319/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_13_20260920_180319/frame_01_2s.jpg" alt="Frame at 2.0s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              2.0s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_13_20260920_180319/frame_02_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_13_20260920_180319/frame_03_5s.jpg" alt="Frame at 5.0s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              5.0s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_13_20260920_180319/frame_04_6s.jpg" alt="Frame at 6.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              6.5s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Boiling water before seasoning added.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 CUT (redundant step).
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="8.0" data-orig-duration="23.71" id="scene-14">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 14</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 4: Spanish Rice & Red Sauce</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Seasoning Spanish Rice with Tomato & Caldo</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_180421.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">23.7s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">8.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (9 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_14_20260920_180421/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_14_20260920_180421/frame_01_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_14_20260920_180421/frame_02_6s.jpg" alt="Frame at 6.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              6.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_14_20260920_180421/frame_03_9s.jpg" alt="Frame at 9.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              9.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_14_20260920_180421/frame_04_12s.jpg" alt="Frame at 12.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              12.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_14_20260920_180421/frame_05_15s.jpg" alt="Frame at 15.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              15.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_14_20260920_180421/frame_06_18s.jpg" alt="Frame at 18.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              18.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_14_20260920_180421/frame_07_21s.jpg" alt="Frame at 21.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              21.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_14_20260920_180421/frame_08_23s.jpg" alt="Frame at 23.21s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              23.21s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Seasoning Spanish rice with tomato and chicken bouillon/caldo.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Trim from 23.7s to active 8s seasoning action.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="14.0" data-orig-duration="64.37" id="scene-15">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 15</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 3: Prep & Peeling</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Peeling Roasted Green Chiles at Table</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_181056.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">64.4s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">14.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (14 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_01_5s.jpg" alt="Frame at 5.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              5.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_02_10s.jpg" alt="Frame at 10.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              10.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_03_15s.jpg" alt="Frame at 15.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              15.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_04_20s.jpg" alt="Frame at 20.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              20.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_05_25s.jpg" alt="Frame at 25.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              25.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_06_30s.jpg" alt="Frame at 30.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              30.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_07_35s.jpg" alt="Frame at 35.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              35.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_08_40s.jpg" alt="Frame at 40.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              40.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_09_45s.jpg" alt="Frame at 45.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              45.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_10_50s.jpg" alt="Frame at 50.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              50.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_11_55s.jpg" alt="Frame at 55.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              55.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_12_60s.jpg" alt="Frame at 60.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              60.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_15_20260920_181056/frame_13_63s.jpg" alt="Frame at 63.87s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              63.87s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Peeling roasted chiles at table with partner (longest clip at 64.4s).</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Speed up to timelapse or cut to best 14s exchange.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="5.0" data-orig-duration="10.59" id="scene-16">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 16</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 3: Prep & Peeling</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Peeling Chiles Close-up</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_181240.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">10.6s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (5 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_16_20260920_181240/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_16_20260920_181240/frame_01_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_16_20260920_181240/frame_02_6s.jpg" alt="Frame at 6.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              6.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_16_20260920_181240/frame_03_9s.jpg" alt="Frame at 9.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              9.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_16_20260920_181240/frame_04_10s.jpg" alt="Frame at 10.09s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              10.09s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Close-up macro of charred skin sliding off tender green flesh.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Keep as tight B-roll cutaway (5.0s).
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-rose-900/40 hover:border-rose-700/60 bg-slate-900/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="remove" data-duration="0.0" data-orig-duration="4.0" id="scene-17">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox"  onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 17</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 3: Prep & Peeling</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Peeling Chiles Table Photo</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_181740.jpg</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/30">REMOVE (DUPLICATE)</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">4.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">0.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (1 image)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_17_20260920_181740/frame_00_still.jpg" alt="Frame at still" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              still
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Still photo of peeled chiles already seen in video.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 CUT (redundant with Scene 16).
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="10.0" data-orig-duration="36.43" id="scene-18">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 18</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 4: Spanish Rice & Red Sauce</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Tomatillos & Baked Red Chiles in Pan</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_182032.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">36.4s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">10.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (8 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_18_20260920_182032/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_18_20260920_182032/frame_01_5s.jpg" alt="Frame at 5.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              5.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_18_20260920_182032/frame_02_10s.jpg" alt="Frame at 10.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              10.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_18_20260920_182032/frame_03_15s.jpg" alt="Frame at 15.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              15.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_18_20260920_182032/frame_04_20s.jpg" alt="Frame at 20.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              20.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_18_20260920_182032/frame_05_25s.jpg" alt="Frame at 25.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              25.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_18_20260920_182032/frame_06_30s.jpg" alt="Frame at 30.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              30.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_18_20260920_182032/frame_07_35s.jpg" alt="Frame at 35.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              35.5s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Halved tomatillos & baked red chiles in blue skillet.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Trim from 36.4s to 10.0s highlighting bright colors.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="4.5" data-orig-duration="10.68" id="scene-19">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 19</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 4: Spanish Rice & Red Sauce</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Simmering Tomatillos & Red Chiles</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_182802.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">10.7s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">4.5s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (5 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_19_20260920_182802/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_19_20260920_182802/frame_01_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_19_20260920_182802/frame_02_6s.jpg" alt="Frame at 6.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              6.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_19_20260920_182802/frame_03_9s.jpg" alt="Frame at 9.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              9.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_19_20260920_182802/frame_04_10s.jpg" alt="Frame at 10.18s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              10.18s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Simmering & softening in skillet.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Trim from 10.7s to brisk 4.5s check-in.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="6.0" data-orig-duration="20.02" id="scene-20">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 20</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 4: Spanish Rice & Red Sauce</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Transferring to Blender</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_183503.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">20.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">6.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (8 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_20_20260920_183503/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_20_20260920_183503/frame_01_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_20_20260920_183503/frame_02_6s.jpg" alt="Frame at 6.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              6.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_20_20260920_183503/frame_03_9s.jpg" alt="Frame at 9.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              9.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_20_20260920_183503/frame_04_12s.jpg" alt="Frame at 12.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              12.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_20_20260920_183503/frame_05_15s.jpg" alt="Frame at 15.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              15.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_20_20260920_183503/frame_06_18s.jpg" alt="Frame at 18.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              18.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_20_20260920_183503/frame_07_19s.jpg" alt="Frame at 19.52s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              19.52s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Transferring softened chiles & tomatillos to blender.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Trim from 20.0s to 6.0s.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="6.6" data-orig-duration="6.59" id="scene-21">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 21</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 4: Spanish Rice & Red Sauce</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Smooth Blended Red Sauce</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_184025.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">6.6s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">6.6s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (5 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_21_20260920_184025/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_21_20260920_184025/frame_01_2s.jpg" alt="Frame at 2.0s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              2.0s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_21_20260920_184025/frame_02_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_21_20260920_184025/frame_03_5s.jpg" alt="Frame at 5.0s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              5.0s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_21_20260920_184025/frame_04_6s.jpg" alt="Frame at 6.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              6.5s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Velvety, vibrant blended red sauce in blender cup.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Keep full 6.6s hero reveal.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="16.0" data-orig-duration="43.82" id="scene-22">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 22</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 5: Battering, Cooking & Finale</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Battering Stuffed Rellenos at Stove</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_184703.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">43.8s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">16.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (10 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_22_20260920_184703/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_22_20260920_184703/frame_01_5s.jpg" alt="Frame at 5.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              5.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_22_20260920_184703/frame_02_10s.jpg" alt="Frame at 10.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              10.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_22_20260920_184703/frame_03_15s.jpg" alt="Frame at 15.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              15.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_22_20260920_184703/frame_04_20s.jpg" alt="Frame at 20.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              20.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_22_20260920_184703/frame_05_25s.jpg" alt="Frame at 25.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              25.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_22_20260920_184703/frame_06_30s.jpg" alt="Frame at 30.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              30.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_22_20260920_184703/frame_07_35s.jpg" alt="Frame at 35.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              35.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_22_20260920_184703/frame_08_40s.jpg" alt="Frame at 40.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              40.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_22_20260920_184703/frame_09_43s.jpg" alt="Frame at 43.32s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              43.32s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Battering & dredging stuffed rellenos at stove.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Trim from 43.8s to active 16s coating technique.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="8.0" data-orig-duration="21.08" id="scene-23">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 23</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 5: Battering, Cooking & Finale</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Cooking Rellenos in Pan & Toaster Oven</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_185204.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">21.1s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">8.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (8 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_23_20260920_185204/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_23_20260920_185204/frame_01_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_23_20260920_185204/frame_02_6s.jpg" alt="Frame at 6.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              6.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_23_20260920_185204/frame_03_9s.jpg" alt="Frame at 9.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              9.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_23_20260920_185204/frame_04_12s.jpg" alt="Frame at 12.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              12.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_23_20260920_185204/frame_05_15s.jpg" alt="Frame at 15.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              15.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_23_20260920_185204/frame_06_18s.jpg" alt="Frame at 18.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              18.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_23_20260920_185204/frame_07_20s.jpg" alt="Frame at 20.58s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              20.58s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Sizzling in skillet and melting cheese in toaster oven.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Trim from 21.1s to 8.0s.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="12.0" data-orig-duration="24.5" id="scene-24">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 24</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 5: Battering, Cooking & Finale</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Finished Plated Chile Rellenos</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_191027.mp4</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">24.5s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">12.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (9 frames)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_24_20260920_191027/frame_00_0s.jpg" alt="Frame at 0.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              0.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_24_20260920_191027/frame_01_3s.jpg" alt="Frame at 3.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              3.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_24_20260920_191027/frame_02_6s.jpg" alt="Frame at 6.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              6.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_24_20260920_191027/frame_03_9s.jpg" alt="Frame at 9.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              9.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_24_20260920_191027/frame_04_12s.jpg" alt="Frame at 12.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              12.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_24_20260920_191027/frame_05_15s.jpg" alt="Frame at 15.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              15.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_24_20260920_191027/frame_06_18s.jpg" alt="Frame at 18.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              18.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_24_20260920_191027/frame_07_21s.jpg" alt="Frame at 21.5s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              21.5s
+            </div>
+          </div>
+        
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_24_20260920_191027/frame_08_24s.jpg" alt="Frame at 24.0s" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              24.0s
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Smothered rellenos with melted cheese, beans, and Spanish rice.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Trim from 24.5s to 12.0s glorious tasting & plating.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="4.0" data-orig-duration="5.0" id="scene-25">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-slate-400 font-bold">SCENE 25</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 5: Battering, Cooking & Finale</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Final Plated Dish Close-up Photo</h2>
+              <span class="text-xs font-mono text-slate-500">20260920_191621.jpg</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">5.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">4.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (1 image)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/scene_25_20260920_191621/frame_00_still.jpg" alt="Frame at still" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              still
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">High-res plated dish close-up.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Keep as final 4s outro & call-to-action.
+          </div>
+        </div>
+      </article>
+    
+    </main>
+
+    <!-- Narrative Voiceover Script Additions -->
+    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-6">
+      <div class="border-b border-slate-800 pb-4">
+        <h2 class="text-xl font-bold text-white">Added History & Terroir Voiceover Script (Prologue: 0:00 - 0:25)</h2>
+        <p class="text-sm text-slate-400 mt-1">To accompany the newly generated historical imagery before your State Fair & roaster footage:</p>
+      </div>
+
+      <div class="space-y-4 text-xs md:text-sm text-slate-300 leading-relaxed font-mono bg-slate-950/70 p-5 rounded-xl border border-slate-800">
+        <p><strong class="text-amber-400">[Scene H1 — Rio Grande Terroir]:</strong> "Why does chile grow so well here in New Mexico? It comes down to a unique terroir found nowhere else on earth: over 300 days of blistering desert sun, rich volcanic river soils along the Rio Grande, and dramatic 35-degree drops between hot days and cool desert nights that force the pods to pack in sugars and intense capsaicin heat."</p>
+        <p><strong class="text-amber-400">[Scene H2 — Centuries of Heritage]:</strong> "For centuries, Pueblo communities and Spanish settlers along the Camino Real cultivated these pods, stringing them into iconic red ristras to sun-dry against adobe walls so their families could survive the harsh winters with rich vitamins and flavor."</p>
+        <p><strong class="text-amber-400">[Scene H3 — Dr. Fabián García (1913)]:</strong> "In 1913, horticulturist Dr. Fabián García bred the historic 'New Mexico No. 9'—the ancestor of all modern Hatch chile, giving it the thick, tender flesh and uniform size that makes it the absolute holy grail for making authentic Chile Rellenos."</p>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    function filterScenes(type) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active', 'bg-emerald-600', 'text-white'));
+      const activeBtn = document.querySelector(`[data-filter="${type}"]`);
+      if (activeBtn) activeBtn.classList.add('active', 'bg-emerald-600', 'text-white');
+
+      const cards = document.querySelectorAll('.scene-card');
+      cards.forEach(card => {
+        const st = card.dataset.status;
+        if (type === 'all') {
+          card.style.display = 'block';
+        } else if (type === 'history') {
+          card.style.display = (st === 'history') ? 'block' : 'none';
+        } else if (type === 'keep') {
+          card.style.display = (st === 'keep' || st === 'trim' || st === 'history') ? 'block' : 'none';
+        } else if (type === 'remove') {
+          card.style.display = (st === 'remove') ? 'block' : 'none';
+        }
+      });
+    }
+
+    function recalculateDuration() {
+      let total = 0;
+      let totalOrig = 0;
+      document.querySelectorAll('.scene-card').forEach(card => {
+        const cb = card.querySelector('.scene-toggle');
+        const dur = parseFloat(card.dataset.duration);
+        const origDur = parseFloat(card.dataset.origDuration);
+        totalOrig += origDur;
+        if (cb && cb.checked) {
+          total += dur;
+        }
+      });
+
+      const m = Math.floor(total / 60);
+      const s = Math.round(total % 60);
+      const str = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+      
+      const diff = Math.max(0, totalOrig - total);
+      const dm = Math.floor(diff / 60);
+      const ds = Math.round(diff % 60);
+      const diffStr = `-${String(dm).padStart(2, '0')}:${String(ds).padStart(2, '0')}`;
+
+      document.getElementById('stat-proposed').innerText = str;
+    }
+  </script>
+</body>
+</html>
