@@ -2,7 +2,7 @@
 <html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
-  <title>New Mexican Chile Rellenos: Complete Storyboard with History, Terroir & State Fair</title>
+  <title>New Mexican Chile Rellenos: Complete Storyboard with Scripts & Reading Times</title>
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
     .frame-scroll::-webkit-scrollbar { height: 6px; }
@@ -18,32 +18,32 @@
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div>
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-3">
-            <span>🌶️ Video Storyboard & Director's Cut: 10-Minute Feature</span>
+            <span>🌶️ Video Storyboard & Script Cue Sheet with Reading Times</span>
           </div>
           <h1 class="text-2xl md:text-4xl font-extrabold tracking-tight text-white">
             Cooking Chile Rellenos <span class="text-amber-400">New Mexican Style</span>
           </h1>
           <p class="text-slate-400 text-sm md:text-base mt-2 max-w-2xl">
-            Enriched with <strong>New Mexico agricultural history, Rio Grande terroir, and the NM State Fair harvest exhibition</strong>.
+            Complete scene-by-scene script with <strong>exact reading times calculated at 138 words per minute</strong>. Includes the New Mexico history prologue, State Fair harvest tradition, and the South Africa produce guide.
           </p>
         </div>
 
         <!-- Key Metrics Cards -->
         <div class="grid grid-cols-3 gap-3 bg-slate-950/60 border border-slate-800/80 p-4 rounded-xl">
           <div class="text-center">
-            <span class="text-xs text-slate-400 block font-medium">Original Raw</span>
-            <span class="text-lg md:text-xl font-bold text-slate-200">07:06</span>
-            <span class="text-[10px] text-slate-500 block">31 total items</span>
+            <span class="text-xs text-slate-400 block font-medium">Video Duration</span>
+            <span class="text-lg md:text-xl font-bold text-emerald-400">10:00</span>
+            <span class="text-[10px] text-slate-500 block">Full Director's Cut</span>
           </div>
           <div class="text-center border-x border-slate-800 px-3">
-            <span class="text-xs text-emerald-400 block font-medium">Director's Cut</span>
-            <span class="text-lg md:text-xl font-bold text-emerald-400" id="stat-proposed">10:00</span>
-            <span class="text-[10px] text-emerald-500/80 block">Full feature</span>
+            <span class="text-xs text-amber-400 block font-medium">Spoken Narration</span>
+            <span class="text-lg md:text-xl font-bold text-amber-400">06:01</span>
+            <span class="text-[10px] text-amber-500/80 block">831 words</span>
           </div>
           <div class="text-center">
-            <span class="text-xs text-blue-400 block font-medium">State Fair & Hist.</span>
-            <span class="text-lg md:text-xl font-bold text-blue-400">+29.0s</span>
-            <span class="text-[10px] text-blue-500/80 block">6 heritage visuals</span>
+            <span class="text-xs text-blue-400 block font-medium">ASMR & Live Banter</span>
+            <span class="text-lg md:text-xl font-bold text-blue-400">03:15</span>
+            <span class="text-[10px] text-blue-500/80 block">Roaster & table talk</span>
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@
             State Fair Exhibits (3)
           </button>
           <button onclick="filterScenes('keep')" class="filter-btn px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition" data-filter="keep">
-            Keep / Trim (25)
+            Active Scenes (25)
           </button>
           <button onclick="filterScenes('remove')" class="filter-btn px-3.5 py-1.5 rounded-lg bg-rose-950/40 text-rose-300 border border-rose-800/50 hover:bg-rose-900/50 transition" data-filter="remove">
             Flagged Duplicates (7)
@@ -69,7 +69,7 @@
         </div>
 
         <div class="text-xs text-slate-400">
-          Check/uncheck scenes to test different cut lengths live.
+          Showing script, word count & read times for each scene.
         </div>
       </div>
     </header>
@@ -77,7 +77,7 @@
     <!-- Visual Storyboard Timeline Grid -->
     <main class="space-y-6" id="scenes-container">
 
-      <article class="scene-card border-amber-700/50 bg-amber-950/10 hover:border-amber-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="history" data-duration="5.0" data-orig-duration="5.0" id="scene-H1">
+      <article class="scene-card border-amber-700/50 bg-amber-950/10 hover:border-amber-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="history" data-duration="35.0" data-orig-duration="35.0" id="scene-H1">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -95,8 +95,8 @@
           <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/50">✨ GENERATED HISTORY ASSET</span>
             <div class="text-right">
-              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">5.0s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.0s</span></div>
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">35.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">35.0s</span></div>
             </div>
           </div>
         </div>
@@ -119,11 +119,26 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~29s (67 words) • Fits perfectly (+6s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Why does chile grow so well here in New Mexico? It comes down to a unique terroir found nowhere else on earth: over three hundred days of blistering high-desert sun, rich volcanic river soils along the Rio Grande, and dramatic thirty-five degree drops between scorching days and crisp desert nights. That thermal shock forces the plants to pack their pods with natural sugars and intense capsaicin heat."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
-            <span class="text-slate-400 ml-1">Visualizes the secret of New Mexico chile: 300+ days of intense high-desert sun, rich alluvial river soil, mountain snowmelt, and dramatic 30°F diurnal shifts (hot days create capsaicin/sugars; cool desert nights lock in flavor).</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
+            <span class="text-slate-400 ml-1">Visualizes the secret of New Mexico chile: 300+ days of intense high-desert sun, rich volcanic river soil, mountain snowmelt, and dramatic 35°F diurnal day/night shifts.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
             🎬 Intro hook: Explains why New Mexico chile cannot be replicated anywhere else.
@@ -131,7 +146,7 @@
         </div>
       </article>
     
-      <article class="scene-card border-amber-700/50 bg-amber-950/10 hover:border-amber-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="history" data-duration="4.5" data-orig-duration="4.5" id="scene-H2">
+      <article class="scene-card border-amber-700/50 bg-amber-950/10 hover:border-amber-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="history" data-duration="35.0" data-orig-duration="35.0" id="scene-H2">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -149,8 +164,8 @@
           <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/50">✨ GENERATED HISTORY ASSET</span>
             <div class="text-right">
-              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">4.5s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">4.5s</span></div>
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">35.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">35.0s</span></div>
             </div>
           </div>
         </div>
@@ -173,11 +188,26 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~21s (49 words) • Fits perfectly (+14s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "For centuries, Pueblo communities and Spanish settlers along the Camino Real cultivated these pods, stringing the ripe red harvest into iconic ristras. Hanging against earthen adobe walls, these chiles sun-cured naturally throughout the autumn, providing families with essential Vitamin C and vibrant flavor to survive the freezing high-desert winters."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
-            <span class="text-slate-400 ml-1">Pueblo and Spanish colonial farming traditions dating back to the late 1500s along the Camino Real. Strings of red chile ristras hung to sun-cure against adobe walls to sustain families through the winter.</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
+            <span class="text-slate-400 ml-1">Pueblo and Spanish colonial farming traditions dating back to the late 1500s along the Camino Real. Strings of red chile ristras hung to sun-cure against adobe walls.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
             🎬 Historical context: Explains how chile became the culinary backbone of New Mexico.
@@ -185,7 +215,7 @@
         </div>
       </article>
     
-      <article class="scene-card border-amber-700/50 bg-amber-950/10 hover:border-amber-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="history" data-duration="4.5" data-orig-duration="4.5" id="scene-H3">
+      <article class="scene-card border-amber-700/50 bg-amber-950/10 hover:border-amber-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="history" data-duration="30.0" data-orig-duration="30.0" id="scene-H3">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -203,8 +233,8 @@
           <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/50">✨ GENERATED HISTORY ASSET</span>
             <div class="text-right">
-              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">4.5s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">4.5s</span></div>
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">30.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">30.0s</span></div>
             </div>
           </div>
         </div>
@@ -227,11 +257,26 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~22s (51 words) • Fits perfectly (+8s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "In 1913, pioneering horticulturist Dr. Fabián García at the New Mexico Agricultural Experiment Station bred 'New Mexico Number Nine'—the genetic ancestor of modern Hatch chile. He standardized the thick, tender flesh and balanced heat that made the pod sturdy enough to be stuffed with cheese and fried into authentic Chile Rellenos."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
-            <span class="text-slate-400 ml-1">Pioneering horticulturalist Dr. Fabián García at the New Mexico Agricultural Experiment Station bred 'New Mexico No. 9' in 1913, standardizing the thick flesh and balanced heat that made chile rellenos possible.</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
+            <span class="text-slate-400 ml-1">Pioneering horticulturalist Dr. Fabián García at the New Mexico Agricultural Experiment Station bred 'New Mexico No. 9' in 1913, standardizing thick flesh and balanced heat.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
             🎬 Ties directly into Scene 1 (the anatomy poster at the State Fair).
@@ -239,7 +284,7 @@
         </div>
       </article>
     
-      <article class="scene-card border-blue-700/50 bg-blue-950/10 hover:border-blue-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="fair" data-duration="5.0" data-orig-duration="5.0" id="scene-F1">
+      <article class="scene-card border-blue-700/50 bg-blue-950/10 hover:border-blue-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="fair" data-duration="15.0" data-orig-duration="15.0" id="scene-F1">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -257,8 +302,8 @@
           <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300 border border-blue-500/50">🎪 NM STATE FAIR EXHIBIT</span>
             <div class="text-right">
-              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">5.0s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.0s</span></div>
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">15.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">15.0s</span></div>
             </div>
           </div>
         </div>
@@ -281,10 +326,25 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-amber-400 font-mono text-[11px] bg-amber-950/40 px-2 py-0.5 rounded border border-amber-800/40">⏱️ Read Time: ~18s (41 words) • Brisk pace</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Every September, thousands gather for the New Mexico State Fair. State fairs began in the nineteenth century as grand agricultural expositions—vital gatherings where farming families brought their harvest to be judged, competed for First Place Blue Ribbons, and exchanged heirloom seeds."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Agricultural display case with 2026 First Place KOB4 Blue Ribbons, yellow entry tags, five-foot snake gourds, and striped winter squash.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
@@ -293,7 +353,7 @@
         </div>
       </article>
     
-      <article class="scene-card border-blue-700/50 bg-blue-950/10 hover:border-blue-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="fair" data-duration="5.0" data-orig-duration="5.0" id="scene-F2">
+      <article class="scene-card border-blue-700/50 bg-blue-950/10 hover:border-blue-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="fair" data-duration="15.0" data-orig-duration="15.0" id="scene-F2">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -311,8 +371,8 @@
           <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300 border border-blue-500/50">🎪 NM STATE FAIR EXHIBIT</span>
             <div class="text-right">
-              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">5.0s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.0s</span></div>
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">15.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">15.0s</span></div>
             </div>
           </div>
         </div>
@@ -335,10 +395,25 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~13s (29 words) • Fits perfectly (+2s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Inside the Agriculture Building, you see colossal Atlantic Giant pumpkins and giant watermelons. It’s a celebration of soil, hard work, and family traditions passed down to the next generation."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Dad and son next to the massive Atlantic Giant pumpkin and watermelon behind the white picket fence. Showcases living family tradition at the fair.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
@@ -347,7 +422,7 @@
         </div>
       </article>
     
-      <article class="scene-card border-blue-700/50 bg-blue-950/10 hover:border-blue-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="fair" data-duration="5.0" data-orig-duration="5.0" id="scene-F3">
+      <article class="scene-card border-blue-700/50 bg-blue-950/10 hover:border-blue-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="fair" data-duration="15.0" data-orig-duration="15.0" id="scene-F3">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -365,8 +440,8 @@
           <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300 border border-blue-500/50">🎪 NM STATE FAIR EXHIBIT</span>
             <div class="text-right">
-              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">5.0s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.0s</span></div>
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">15.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">15.0s</span></div>
             </div>
           </div>
         </div>
@@ -389,10 +464,25 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~12s (28 words) • Fits perfectly (+3s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Ceremonial baskets of multicolored flint corn honor the ancient 'Three Sisters'—corn, beans, and squash—the companion-planting trio that formed the agricultural backbone of New Mexico for thousands of years."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Woven ceremonial basket filled with heirloom multicolored flint corn with 2026 First Place ribbon. Honors the ancient 'Three Sisters' (corn, beans, squash).</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
@@ -401,7 +491,7 @@
         </div>
       </article>
     
-      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="3.5" data-orig-duration="4.0" id="scene-1">
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="12.0" data-orig-duration="4.0" id="scene-1">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -420,7 +510,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">4.0s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">3.5s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">12.0s</span></div>
             </div>
           </div>
         </div>
@@ -443,19 +533,34 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-amber-400 font-mono text-[11px] bg-amber-950/40 px-2 py-0.5 rounded border border-amber-800/40">⏱️ Read Time: ~14s (33 words) • Brisk pace</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Here's a secret most people get wrong: the heat in a chile is not in the seeds. It actually lives in the white placenta veins along the inner ribs where capsaicin glands concentrate."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Grounds the video in New Mexico culture and pod anatomy with child at the Fair.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Keep as bridge from history into present-day.
+            🎬 Keep as bridge from fair history into present-day cooking.
           </div>
         </div>
       </article>
     
-      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="3.5" data-orig-duration="5.74" id="scene-2">
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="5.7" data-orig-duration="5.74" id="scene-2">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -474,7 +579,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">5.7s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">3.5s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.7s</span></div>
             </div>
           </div>
         </div>
@@ -518,19 +623,34 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-amber-400 font-mono text-[11px] bg-amber-950/40 px-2 py-0.5 rounded border border-amber-800/40">⏱️ Read Time: ~6s (14 words) • Brisk pace</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "And here are the prize-winning Hatch pods—the gold standard that inspires our cooking today."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">State fair ribbons & prize chile pods establish authentic NM pride.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Trim from 5.7s to 3.5s.
+            🎬 Showcases the winning Hatch pods that inspire our cooking.
           </div>
         </div>
       </article>
     
-      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="4.5" data-orig-duration="16.14" id="scene-3">
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="16.1" data-orig-duration="16.14" id="scene-3">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -549,7 +669,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">16.1s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">4.5s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">16.1s</span></div>
             </div>
           </div>
         </div>
@@ -607,14 +727,29 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~7s (17 words) • Fits perfectly (+9s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "First stop: the Mexican market to grab fresh spices, Mexican oregano, and hibiscus flowers for our feast."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Establishes Mexican market atmosphere (Jamaica, spices).</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Trim from 16.1s to 4.5s.
+            🎬 Ambiance & shopping trip.
           </div>
         </div>
       </article>
@@ -682,10 +817,18 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/40 border border-slate-800/60 rounded-xl p-3 flex items-center justify-between">
+          <span class="text-xs text-slate-500 italic">No narration (Cut clip / Non-vocal)</span>
+          <span class="text-rose-400 font-mono text-[11px] bg-rose-950/40 px-2 py-0.5 rounded border border-rose-800/40">Scene Cut (No script)</span>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Duplicate take of Scene 3 showing the same shelves.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
@@ -694,7 +837,7 @@
         </div>
       </article>
     
-      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="3.5" data-orig-duration="4.0" id="scene-5">
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="12.0" data-orig-duration="4.0" id="scene-5">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -713,7 +856,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">4.0s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">3.5s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">12.0s</span></div>
             </div>
           </div>
         </div>
@@ -736,14 +879,29 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-amber-400 font-mono text-[11px] bg-amber-950/40 px-2 py-0.5 rounded border border-amber-800/40">⏱️ Read Time: ~12s (28 words) • Brisk pace</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Look at this wall of dried red chile pods. While green chile is picked young, red chile is left on the vine to ripen into sweet, smoky depth."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Iconic wall of dried red chile pods for the sauce.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Keep (3.5s) to introduce red sauce concept.
+            🎬 Introduces red chile sauce concept.
           </div>
         </div>
       </article>
@@ -804,10 +962,18 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/40 border border-slate-800/60 rounded-xl p-3 flex items-center justify-between">
+          <span class="text-xs text-slate-500 italic">No narration (Cut clip / Non-vocal)</span>
+          <span class="text-rose-400 font-mono text-[11px] bg-rose-950/40 px-2 py-0.5 rounded border border-rose-800/40">Scene Cut (No script)</span>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Shaky wide angle of roasters before flames start.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
@@ -816,7 +982,7 @@
         </div>
       </article>
     
-      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="6.0" data-orig-duration="7.15" id="scene-7">
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="7.2" data-orig-duration="7.15" id="scene-7">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -835,7 +1001,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">7.2s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">6.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">7.2s</span></div>
             </div>
           </div>
         </div>
@@ -886,19 +1052,34 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-amber-400 font-mono text-[11px] bg-amber-950/40 px-2 py-0.5 rounded border border-amber-800/40">⏱️ Read Time: ~12s (27 words) • Brisk pace</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Nothing beats the roar of propane burners. Steel drums tumbling fresh green chiles until the skins blister, pop, and fill the air with that iconic autumn aroma."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Roaring roaster drums spinning over propane flames!</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Keep hero flames & roaring audio (6.0s).
+            🎬 Hero flames & roaring audio.
           </div>
         </div>
       </article>
     
-      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="3.5" data-orig-duration="4.0" id="scene-8">
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="8.0" data-orig-duration="4.0" id="scene-8">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -917,7 +1098,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">4.0s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">3.5s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">8.0s</span></div>
             </div>
           </div>
         </div>
@@ -940,19 +1121,34 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~7s (16 words) • Fits perfectly (+1s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "A fresh twenty-pound sack of steaming roasted Hatch green chile, hot and ready for the kitchen!"
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Proudly holding the giant clear sack of freshly roasted chiles by car.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Keep as celebratory milestone (3.5s).
+            🎬 Celebratory milestone heading home.
           </div>
         </div>
       </article>
     
-      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="5.0" data-orig-duration="27.45" id="scene-9">
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="18.6" data-orig-duration="27.45" id="scene-9">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -971,7 +1167,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">27.4s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">18.6s</span></div>
             </div>
           </div>
         </div>
@@ -1057,14 +1253,29 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~14s (31 words) • Fits perfectly (+5s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "As soon as they come off the flame, you let the chiles steam in their bag for twenty minutes. That steam loosens the charred outer skin so it slides right off."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Steam rising inside roasted chile sack.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Trim from 27.5s down to 5.0s for quick atmospheric punch.
+            🎬 Crucial technique: sweating the chiles.
           </div>
         </div>
       </article>
@@ -1111,10 +1322,18 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/40 border border-slate-800/60 rounded-xl p-3 flex items-center justify-between">
+          <span class="text-xs text-slate-500 italic">No narration (Cut clip / Non-vocal)</span>
+          <span class="text-rose-400 font-mono text-[11px] bg-rose-950/40 px-2 py-0.5 rounded border border-rose-800/40">Scene Cut (No script)</span>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Duplicate static angle of kitchen table before Scene 11.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
@@ -1123,7 +1342,7 @@
         </div>
       </article>
     
-      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="14.0" data-orig-duration="31.42" id="scene-11">
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="31.4" data-orig-duration="31.42" id="scene-11">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -1142,7 +1361,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">31.4s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">14.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">31.4s</span></div>
             </div>
           </div>
         </div>
@@ -1207,14 +1426,29 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~15s (35 words) • Fits perfectly (+16s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Listen in as we examine the roasted pod at the table: always keep the stem intact as your handle, make a single careful slit down the belly, and remove seeds gently without tearing the flesh."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Presenting peeled chile & explaining technique (with dog in back).</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Trim from 31.4s to best 14s of dialogue.
+            🎬 Live dialogue & technique explanation.
           </div>
         </div>
       </article>
@@ -1275,10 +1509,18 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/40 border border-slate-800/60 rounded-xl p-3 flex items-center justify-between">
+          <span class="text-xs text-slate-500 italic">No narration (Cut clip / Non-vocal)</span>
+          <span class="text-rose-400 font-mono text-[11px] bg-rose-950/40 px-2 py-0.5 rounded border border-rose-800/40">Scene Cut (No script)</span>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Pot of plain water before rice or seasoning.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
@@ -1357,10 +1599,18 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/40 border border-slate-800/60 rounded-xl p-3 flex items-center justify-between">
+          <span class="text-xs text-slate-500 italic">No narration (Cut clip / Non-vocal)</span>
+          <span class="text-rose-400 font-mono text-[11px] bg-rose-950/40 px-2 py-0.5 rounded border border-rose-800/40">Scene Cut (No script)</span>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Boiling water before seasoning added.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
@@ -1369,7 +1619,7 @@
         </div>
       </article>
     
-      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="8.0" data-orig-duration="23.71" id="scene-14">
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="23.7" data-orig-duration="23.71" id="scene-14">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -1388,7 +1638,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">23.7s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">8.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">23.7s</span></div>
             </div>
           </div>
         </div>
@@ -1467,19 +1717,34 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~12s (28 words) • Fits perfectly (+12s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "On the back burner, we start our authentic Spanish rice: browning the grains in oil, then simmering with tomato sauce, garlic, and chicken bouillon until fluffy and fragrant."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Seasoning Spanish rice with tomato and chicken bouillon/caldo.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Trim from 23.7s to active 8s seasoning action.
+            🎬 Side dish technique.
           </div>
         </div>
       </article>
     
-      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="14.0" data-orig-duration="64.37" id="scene-15">
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="54.0" data-orig-duration="64.37" id="scene-15">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -1498,7 +1763,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">64.4s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">14.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">54.0s</span></div>
             </div>
           </div>
         </div>
@@ -1612,19 +1877,34 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~21s (49 words) • Fits perfectly (+33s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Now for our red sauce secret weapon: fresh green tomatillos. While peeling chiles is iconic, we sit down to husk a whole harvest of tomatillos. Their natural malic acid and pectin provide the essential tartness to balance the deep, earthy red chiles and cut through the rich fried cheese."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Husking and sorting fresh green tomatillos at the table with partner. Their bright tart acidity balances the sweet earthy heat of the baked red chiles.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Speed up to timelapse or cut to best 14s exchange.
+            🎬 Warm table banter & sauce prep.
           </div>
         </div>
       </article>
     
-      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="5.0" data-orig-duration="10.59" id="scene-16">
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="10.6" data-orig-duration="10.59" id="scene-16">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -1643,7 +1923,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">10.6s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">10.6s</span></div>
             </div>
           </div>
         </div>
@@ -1694,14 +1974,29 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~5s (12 words) • Fits perfectly (+5s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Peeling away that papery husk reveals the bright, sticky green fruit underneath."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Close-up macro removing the papery husks to reveal the sticky, vibrant green tomatillos.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Keep as tight B-roll cutaway (5.0s).
+            🎬 Tight B-roll cutaway.
           </div>
         </div>
       </article>
@@ -1748,10 +2043,18 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/40 border border-slate-800/60 rounded-xl p-3 flex items-center justify-between">
+          <span class="text-xs text-slate-500 italic">No narration (Cut clip / Non-vocal)</span>
+          <span class="text-rose-400 font-mono text-[11px] bg-rose-950/40 px-2 py-0.5 rounded border border-rose-800/40">Scene Cut (No script)</span>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Still photo of husked tomatillos already captured in live video.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
@@ -1760,7 +2063,7 @@
         </div>
       </article>
     
-      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="10.0" data-orig-duration="36.43" id="scene-18">
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="36.4" data-orig-duration="36.43" id="scene-18">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -1779,7 +2082,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">36.4s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">10.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">36.4s</span></div>
             </div>
           </div>
         </div>
@@ -1851,19 +2154,34 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~21s (48 words) • Fits perfectly (+16s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Into our cast iron skillet go halved fresh tomatillos and oven-baked red Hatch chiles. In New Mexico, some make red sauce with a flour-and-lard roux, but our whole-baked pod and tomatillo base creates a silky, naturally gluten-free sauce with an unbeatable balance of sweet heat and citrusy tang."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Halved tomatillos & baked red chiles in blue skillet.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Trim from 36.4s to 10.0s highlighting bright colors.
+            🎬 Roux vs Whole Pod explanation.
           </div>
         </div>
       </article>
     
-      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="4.5" data-orig-duration="10.68" id="scene-19">
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="10.7" data-orig-duration="10.68" id="scene-19">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -1882,7 +2200,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">10.7s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">4.5s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">10.7s</span></div>
             </div>
           </div>
         </div>
@@ -1933,19 +2251,34 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~8s (19 words) • Fits perfectly (+2s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Simmering gently until the tomatillos soften and release their juices, infusing with the smoky sweetness of the red pods."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Simmering & softening in skillet.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Trim from 10.7s to brisk 4.5s check-in.
+            🎬 Simmering check-in.
           </div>
         </div>
       </article>
     
-      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="6.0" data-orig-duration="20.02" id="scene-20">
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="20.0" data-orig-duration="20.02" id="scene-20">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -1964,7 +2297,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">20.0s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">6.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">20.0s</span></div>
             </div>
           </div>
         </div>
@@ -2036,14 +2369,29 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-amber-400 font-mono text-[11px] bg-amber-950/40 px-2 py-0.5 rounded border border-amber-800/40">⏱️ Read Time: ~22s (51 words) • Brisk pace</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Transferring into the blender cup. If you're cooking in South Africa without Hatch chiles, don't worry: char a green bell pepper on your braai coals, tuck a sliver of roasted jalapeño inside with South African Gouda for heat, and use Robertsons mild paprika in a classic roux for your red sauce!"
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Transferring softened chiles & tomatillos to blender.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Trim from 20.0s to 6.0s.
+            🎬 Blending & South Africa substitution guide.
           </div>
         </div>
       </article>
@@ -2118,19 +2466,34 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~6s (15 words) • Fits perfectly (+0s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Blended silky smooth. That vibrant orange-red color and velvety texture is pure New Mexican magic."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Velvety, vibrant blended red sauce in blender cup.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Keep full 6.6s hero reveal.
+            🎬 Hero sauce reveal.
           </div>
         </div>
       </article>
     
-      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="16.0" data-orig-duration="43.82" id="scene-22">
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="43.8" data-orig-duration="43.82" id="scene-22">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -2149,7 +2512,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">43.8s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">16.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">43.8s</span></div>
             </div>
           </div>
         </div>
@@ -2235,19 +2598,34 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~19s (43 words) • Fits perfectly (+25s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "The traditional New Mexican batter is like a savory soufflé. We whip egg whites to stiff peaks, gently fold the yolks back in, dust our cheese-stuffed chiles in flour, and completely coat them in this airy egg cloud before dipping into hot oil."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Battering & dredging stuffed rellenos at stove.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Trim from 43.8s to active 16s coating technique.
+            🎬 Soufflé egg cloud technique.
           </div>
         </div>
       </article>
     
-      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="8.0" data-orig-duration="21.08" id="scene-23">
+      <article class="scene-card border-slate-800 hover:border-slate-700 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="trim" data-duration="21.1" data-orig-duration="21.08" id="scene-23">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -2266,7 +2644,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30">TRIM & TIGHTEN</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">21.1s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">8.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">21.1s</span></div>
             </div>
           </div>
         </div>
@@ -2338,19 +2716,34 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~13s (29 words) • Fits perfectly (+8s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Just two to three minutes in hot oil at three hundred and seventy-five degrees until golden and puffy, then a quick bake to ensure the cheese is molten throughout."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Sizzling in skillet and melting cheese in toaster oven.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Trim from 21.1s to 8.0s.
+            🎬 Frying & baking temperature control.
           </div>
         </div>
       </article>
     
-      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="12.0" data-orig-duration="24.5" id="scene-24">
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="24.5" data-orig-duration="24.5" id="scene-24">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -2369,7 +2762,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">24.5s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">12.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">24.5s</span></div>
             </div>
           </div>
         </div>
@@ -2448,19 +2841,34 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~11s (25 words) • Fits perfectly (+14s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Look at this masterpiece: two golden rellenos smothered in our homemade baked Hatch red sauce, served alongside pinto beans, fresh Mexican rice, and melted cheese."
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
             <span class="text-slate-400 ml-1">Smothered rellenos with melted cheese, beans, and Spanish rice.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Trim from 24.5s to 12.0s glorious tasting & plating.
+            🎬 Plating reveal.
           </div>
         </div>
       </article>
     
-      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="4.0" data-orig-duration="5.0" id="scene-25">
+      <article class="scene-card border-emerald-900/30 hover:border-emerald-700/50 bg-slate-900 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="keep" data-duration="35.5" data-orig-duration="5.0" id="scene-25">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
           <div class="flex items-start gap-3">
             <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
@@ -2479,7 +2887,7 @@
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">HERO / KEEP</span>
             <div class="text-right">
               <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">5.0s</span></div>
-              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">4.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">35.5s</span></div>
             </div>
           </div>
         </div>
@@ -2502,19 +2910,70 @@
           </div>
         </div>
 
-        <!-- Editorial Rationale & Voiceover Cue -->
-        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <!-- Voiceover Script & Reading Time -->
+        
+        <div class="mt-4 bg-slate-950/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <span>🎙️ Voiceover Script</span>
+            </span>
+            <span class="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">⏱️ Read Time: ~20s (46 words) • Fits perfectly (+16s buffer)</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-200 font-serif italic leading-relaxed pt-1">
+            "Cutting into the center reveals the tender roasted green chile pod and that incredible molten cheese stretch. The tart red sauce cuts through the rich batter like a dream. Try this at home, and let me know in the comments: are you Red, Green, or Christmas?"
+          </p>
+        </div>
+        
+
+        <!-- Editorial Rationale & Director's Note -->
+        <div class="mt-3 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
           <div>
-            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
-            <span class="text-slate-400 ml-1">High-res plated dish close-up.</span>
+            <span class="font-semibold text-slate-300">Director's Note:</span>
+            <span class="text-slate-400 ml-1">High-res plated dish close-up & final sign-off.</span>
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
-            🎬 Keep as final 4s outro & call-to-action.
+            🎬 Hero cheese pull, taste test & call-to-action.
           </div>
         </div>
       </article>
     
     </main>
+
+    <!-- State Fair Deep-Dive Section -->
+    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-6">
+      <div class="border-b border-slate-800 pb-4 flex flex-col md:flex-row md:items-center justify-between gap-2">
+        <div>
+          <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-2">
+            <span>🎪 Living Cultural Heritage</span>
+          </div>
+          <h2 class="text-xl md:text-2xl font-bold text-white">What Are State Fairs For? The Agricultural Harvest Tradition</h2>
+        </div>
+        <span class="text-xs text-blue-400 font-mono bg-blue-950/40 px-3 py-1 rounded-lg border border-blue-800/40">3 Exhibition Visuals</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-5 space-y-3">
+          <h3 class="text-sm font-bold text-blue-400 uppercase tracking-wide">1. The 19th-Century Origin</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            American state fairs began in the 1800s as vital agricultural expositions. Before supermarkets and agricultural universities had the internet, the annual fair was where growers, ranchers, and communities gathered at harvest time to exchange seeds, share agricultural discoveries, and display their finest produce.
+          </p>
+        </div>
+
+        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-5 space-y-3">
+          <h3 class="text-sm font-bold text-amber-400 uppercase tracking-wide">2. The "Three Sisters" Legacy</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Inside the NM State Fair Agriculture Building, the giant squash, award-winning pumpkins, and ceremonial baskets of heirloom flint corn honor the indigenous <em>Three Sisters</em> (corn, beans, squash)—the companion-planting trio that sustained Pueblo communities along the Rio Grande for thousands of years.
+          </p>
+        </div>
+
+        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-5 space-y-3">
+          <h3 class="text-sm font-bold text-emerald-400 uppercase tracking-wide">3. The Chile Crown Jewel</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Held every September during peak harvest, the New Mexico State Fair Chile Competition awards the coveted <strong>First Place Blue Ribbons</strong>. Judged on pod length, thick meaty walls, and heat balance, these winning pods set the gold standard for the entire state's roasting season.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Red Sauce Variations & Global / South Africa Substitution Guide -->
     <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-6">
@@ -2587,56 +3046,6 @@
       </div>
     </section>
 
-    <!-- State Fair Deep-Dive Section -->
-    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-6">
-      <div class="border-b border-slate-800 pb-4 flex flex-col md:flex-row md:items-center justify-between gap-2">
-        <div>
-          <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-2">
-            <span>🎪 Living Cultural Heritage</span>
-          </div>
-          <h2 class="text-xl md:text-2xl font-bold text-white">What Are State Fairs For? The Agricultural Harvest Tradition</h2>
-        </div>
-        <span class="text-xs text-blue-400 font-mono bg-blue-950/40 px-3 py-1 rounded-lg border border-blue-800/40">3 Exhibition Visuals</span>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-5 space-y-3">
-          <h3 class="text-sm font-bold text-blue-400 uppercase tracking-wide">1. The 19th-Century Origin</h3>
-          <p class="text-xs text-slate-300 leading-relaxed">
-            American state fairs began in the 1800s as vital agricultural expositions. Before supermarkets and agricultural universities had the internet, the annual fair was where growers, ranchers, and communities gathered at harvest time to exchange seeds, share agricultural discoveries, and display their finest produce.
-          </p>
-        </div>
-
-        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-5 space-y-3">
-          <h3 class="text-sm font-bold text-amber-400 uppercase tracking-wide">2. The "Three Sisters" Legacy</h3>
-          <p class="text-xs text-slate-300 leading-relaxed">
-            Inside the NM State Fair Agriculture Building, the giant squash, award-winning pumpkins, and ceremonial baskets of heirloom flint corn honor the indigenous <em>Three Sisters</em> (corn, beans, squash)—the companion-planting trio that sustained Pueblo communities along the Rio Grande for thousands of years.
-          </p>
-        </div>
-
-        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-5 space-y-3">
-          <h3 class="text-sm font-bold text-emerald-400 uppercase tracking-wide">3. The Chile Crown Jewel</h3>
-          <p class="text-xs text-slate-300 leading-relaxed">
-            Held every September during peak harvest, the New Mexico State Fair Chile Competition awards the coveted <strong>First Place Blue Ribbons</strong>. Judged on pod length, thick meaty walls, and heat balance, these winning pods set the gold standard for the entire state's roasting season.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Narrative Voiceover Script Additions -->
-    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-6">
-      <div class="border-b border-slate-800 pb-4">
-        <h2 class="text-xl font-bold text-white">Full Voiceover Script & Educational Narration Guide (10:00 Cut)</h2>
-        <p class="text-sm text-slate-400 mt-1">Word-for-word cues for the expanded historical prologue, State Fair, and red sauce deep-dive:</p>
-      </div>
-
-      <div class="space-y-4 text-xs md:text-sm text-slate-300 leading-relaxed font-mono bg-slate-950/70 p-5 rounded-xl border border-slate-800">
-        <p><strong class="text-amber-400">[Prologue — Terroir & Heritage (0:00 - 1:45)]:</strong> "Why does chile grow so well here in New Mexico? It comes down to a unique terroir found nowhere else on earth: over 300 days of blistering desert sun, rich volcanic river soils along the Rio Grande, and dramatic 35-degree drops between hot days and cool desert nights that force the pods to pack in sugars and intense capsaicin heat... In 1913, Dr. Fabián García bred the historic 'New Mexico No. 9'—the ancestor of all modern Hatch chile, giving it the thick, tender flesh that makes it the holy grail for making authentic Chile Rellenos."</p>
-        <p><strong class="text-blue-400">[Act 1 — The State Fair & Harvest (1:45 - 2:45)]:</strong> "Every September, thousands gather for the New Mexico State Fair. State fairs began in the 1800s as agricultural expositions—the vital gathering ground where farmers brought their harvest to be judged and traded heirloom seeds. You see that living heritage inside the Agriculture Building: giant Atlantic pumpkins, five-foot long squash, and ceremonial baskets of heirloom Pueblo flint corn. And of course, the crown jewel is the Chile Competition, where growers compete for First Place Blue Ribbons, sparking the statewide roasting season."</p>
-        <p><strong class="text-emerald-400">[Act 4 — Red Sauce Styles & South Africa Guide (5:15 - 7:00)]:</strong> "Every good New Mexican relleno needs a sauce that honors the chile. You'll find two main schools of thought: the traditional northern New Mexico Roux method, where flour is browned in lard with pure red chile powder and broth for a rich gravy... and the whole baked pod and tomatillo method we're doing today, which relies on baked Hatch pods and the natural acidity of fresh tomatillos for a bright, naturally gluten-free sauce. If you don't have Hatch chiles in the US, use Anaheim or Poblano peppers. And if you're watching in South Africa, where supermarkets only have bell peppers, jalapeños, and blazing hot bird's eye chillies: char a green bell pepper on your braai coals or gas stove and peel it. Then roast a jalapeño—which matches the exact heat of medium Hatch chile—and tuck a strip inside the bell pepper with your South African Gouda! For your red sauce, use Robertsons mild paprika in a classic roux for that rich red chile flavor without needing imported pods!"</p>
-      </div>
-    </section>
-
   </div>
 
   <script>
@@ -2678,12 +3087,6 @@
       const m = Math.floor(total / 60);
       const s = Math.round(total % 60);
       const str = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-      
-      const diff = Math.max(0, totalOrig - total);
-      const dm = Math.floor(diff / 60);
-      const ds = Math.round(diff % 60);
-      const diffStr = `-${String(dm).padStart(2, '0')}:${String(ds).padStart(2, '0')}`;
-
       document.getElementById('stat-proposed').innerText = str;
     }
   </script>
