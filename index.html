@@ -2,7 +2,7 @@
 <html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
-  <title>New Mexican Chile Rellenos: Complete Storyboard with History & Terroir</title>
+  <title>New Mexican Chile Rellenos: Complete Storyboard with History, Terroir & State Fair</title>
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
     .frame-scroll::-webkit-scrollbar { height: 6px; }
@@ -18,13 +18,13 @@
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div>
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-3">
-            <span>🌶️ Video Storyboard & Director's Cut with History Prologue</span>
+            <span>🌶️ Video Storyboard & Director's Cut: 10-Minute Feature</span>
           </div>
           <h1 class="text-2xl md:text-4xl font-extrabold tracking-tight text-white">
             Cooking Chile Rellenos <span class="text-amber-400">New Mexican Style</span>
           </h1>
           <p class="text-slate-400 text-sm md:text-base mt-2 max-w-2xl">
-            Enriched with <strong>New Mexico agricultural history & Rio Grande terroir</strong>. Frame-by-frame analysis with duplicate removals for a cinematic, educational 4-minute YouTube video.
+            Enriched with <strong>New Mexico agricultural history, Rio Grande terroir, and the NM State Fair harvest exhibition</strong>.
           </p>
         </div>
 
@@ -32,18 +32,18 @@
         <div class="grid grid-cols-3 gap-3 bg-slate-950/60 border border-slate-800/80 p-4 rounded-xl">
           <div class="text-center">
             <span class="text-xs text-slate-400 block font-medium">Original Raw</span>
-            <span class="text-lg md:text-xl font-bold text-slate-200">06:51</span>
-            <span class="text-[10px] text-slate-500 block">28 total items</span>
+            <span class="text-lg md:text-xl font-bold text-slate-200">07:06</span>
+            <span class="text-[10px] text-slate-500 block">31 total items</span>
           </div>
           <div class="text-center border-x border-slate-800 px-3">
             <span class="text-xs text-emerald-400 block font-medium">Director's Cut</span>
-            <span class="text-lg md:text-xl font-bold text-emerald-400" id="stat-proposed">02:31</span>
-            <span class="text-[10px] text-emerald-500/80 block">21 tight scenes</span>
+            <span class="text-lg md:text-xl font-bold text-emerald-400" id="stat-proposed">10:00</span>
+            <span class="text-[10px] text-emerald-500/80 block">Full feature</span>
           </div>
           <div class="text-center">
-            <span class="text-xs text-amber-400 block font-medium">History Prologue</span>
-            <span class="text-lg md:text-xl font-bold text-amber-400">+14.0s</span>
-            <span class="text-[10px] text-amber-500/80 block">3 heritage visuals</span>
+            <span class="text-xs text-blue-400 block font-medium">State Fair & Hist.</span>
+            <span class="text-lg md:text-xl font-bold text-blue-400">+29.0s</span>
+            <span class="text-[10px] text-blue-500/80 block">6 heritage visuals</span>
           </div>
         </div>
       </div>
@@ -52,13 +52,16 @@
       <div class="mt-8 pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-4">
         <div class="flex flex-wrap gap-2 text-xs font-medium" id="filter-buttons">
           <button onclick="filterScenes('all')" class="filter-btn active px-3.5 py-1.5 rounded-lg bg-emerald-600 text-white font-semibold transition" data-filter="all">
-            All Scenes (28)
+            All Scenes (31)
           </button>
           <button onclick="filterScenes('history')" class="filter-btn px-3.5 py-1.5 rounded-lg bg-amber-950/40 text-amber-300 border border-amber-700/50 hover:bg-amber-900/50 transition" data-filter="history">
             History & Terroir (3)
           </button>
+          <button onclick="filterScenes('fair')" class="filter-btn px-3.5 py-1.5 rounded-lg bg-blue-950/40 text-blue-300 border border-blue-700/50 hover:bg-blue-900/50 transition" data-filter="fair">
+            State Fair Exhibits (3)
+          </button>
           <button onclick="filterScenes('keep')" class="filter-btn px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition" data-filter="keep">
-            Keep / Trim (21)
+            Keep / Trim (25)
           </button>
           <button onclick="filterScenes('remove')" class="filter-btn px-3.5 py-1.5 rounded-lg bg-rose-950/40 text-rose-300 border border-rose-800/50 hover:bg-rose-900/50 transition" data-filter="remove">
             Flagged Duplicates (7)
@@ -232,6 +235,168 @@
           </div>
           <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
             🎬 Ties directly into Scene 1 (the anatomy poster at the State Fair).
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-blue-700/50 bg-blue-950/10 hover:border-blue-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="fair" data-duration="5.0" data-orig-duration="5.0" id="scene-F1">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-blue-400 font-bold">SCENE F1</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 1: NM State Fair & Harvest</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">State Fair: Prize Gourds & 2026 Blue Ribbons</h2>
+              <span class="text-xs font-mono text-slate-500">fair_01_giant_squash_ribbons.jpg</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300 border border-blue-500/50">🎪 NM STATE FAIR EXHIBIT</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">5.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (1 image)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/fair_01_squash/frame_00_still.jpg" alt="Frame at still" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              still
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Agricultural display case with 2026 First Place KOB4 Blue Ribbons, yellow entry tags, five-foot snake gourds, and striped winter squash.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Explains why American state fairs were created: 19th-century agricultural competitions.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-blue-700/50 bg-blue-950/10 hover:border-blue-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="fair" data-duration="5.0" data-orig-duration="5.0" id="scene-F2">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-blue-400 font-bold">SCENE F2</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 1: NM State Fair & Harvest</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">State Fair: Giant Pumpkin & Family Tradition</h2>
+              <span class="text-xs font-mono text-slate-500">fair_02_giant_pumpkin_kid.jpg</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300 border border-blue-500/50">🎪 NM STATE FAIR EXHIBIT</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">5.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (1 image)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/fair_02_pumpkin/frame_00_still.jpg" alt="Frame at still" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              still
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Dad and son next to the massive Atlantic Giant pumpkin and watermelon behind the white picket fence. Showcases living family tradition at the fair.</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Personal connection: Connecting the next generation to the land and farming heritage.
+          </div>
+        </div>
+      </article>
+    
+      <article class="scene-card border-blue-700/50 bg-blue-950/10 hover:border-blue-500/60 border rounded-2xl p-5 md:p-6 transition duration-200" data-status="fair" data-duration="5.0" data-orig-duration="5.0" id="scene-F3">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-800/80">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" checked onchange="recalculateDuration()" class="scene-toggle mt-1.5 h-4 w-4 rounded border-slate-700 text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-blue-400 font-bold">SCENE F3</span>
+                <span class="text-xs text-slate-500">•</span>
+                <span class="text-xs text-slate-400 font-medium">Act 1: NM State Fair & Harvest</span>
+              </div>
+              <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">State Fair: Heirloom Pueblo Indian Flint Corn</h2>
+              <span class="text-xs font-mono text-slate-500">fair_03_heirloom_corn_ribbon.jpg</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300 border border-blue-500/50">🎪 NM STATE FAIR EXHIBIT</span>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Duration: <span class="font-mono text-slate-300">5.0s</span></div>
+              <div class="text-xs text-emerald-400 font-semibold">Recommended: <span class="font-mono">5.0s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snapshots Strip -->
+        <div class="my-4">
+          <div class="text-xs font-medium text-slate-400 mb-2 flex items-center justify-between">
+            <span>Visual Assets (1 image)</span>
+            <span class="text-[11px] text-slate-500">Scroll horizontally $\rightarrow$</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 frame-scroll">
+            
+          <div class="flex-shrink-0 w-52 group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shadow-md">
+            <img src="storyboard_frames/fair_03_corn/frame_00_still.jpg" alt="Frame at still" class="w-full h-32 object-cover group-hover:scale-105 transition duration-200">
+            <div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-slate-300">
+              still
+            </div>
+          </div>
+        
+          </div>
+        </div>
+
+        <!-- Editorial Rationale & Voiceover Cue -->
+        <div class="mt-4 pt-3 border-t border-slate-800/60 bg-slate-950/40 rounded-xl p-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-semibold text-slate-300">Historical & Educational Context:</span>
+            <span class="text-slate-400 ml-1">Woven ceremonial basket filled with heirloom multicolored flint corn with 2026 First Place ribbon. Honors the ancient 'Three Sisters' (corn, beans, squash).</span>
+          </div>
+          <div class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800/80 font-mono text-emerald-400 border border-slate-700/60">
+            🎬 Honors indigenous agricultural foundations of New Mexico before transitioning to chile.
           </div>
         </div>
       </article>
@@ -2422,15 +2587,52 @@
       </div>
     </section>
 
+    <!-- State Fair Deep-Dive Section -->
+    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-6">
+      <div class="border-b border-slate-800 pb-4 flex flex-col md:flex-row md:items-center justify-between gap-2">
+        <div>
+          <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-2">
+            <span>🎪 Living Cultural Heritage</span>
+          </div>
+          <h2 class="text-xl md:text-2xl font-bold text-white">What Are State Fairs For? The Agricultural Harvest Tradition</h2>
+        </div>
+        <span class="text-xs text-blue-400 font-mono bg-blue-950/40 px-3 py-1 rounded-lg border border-blue-800/40">3 Exhibition Visuals</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-5 space-y-3">
+          <h3 class="text-sm font-bold text-blue-400 uppercase tracking-wide">1. The 19th-Century Origin</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            American state fairs began in the 1800s as vital agricultural expositions. Before supermarkets and agricultural universities had the internet, the annual fair was where growers, ranchers, and communities gathered at harvest time to exchange seeds, share agricultural discoveries, and display their finest produce.
+          </p>
+        </div>
+
+        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-5 space-y-3">
+          <h3 class="text-sm font-bold text-amber-400 uppercase tracking-wide">2. The "Three Sisters" Legacy</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Inside the NM State Fair Agriculture Building, the giant squash, award-winning pumpkins, and ceremonial baskets of heirloom flint corn honor the indigenous <em>Three Sisters</em> (corn, beans, squash)—the companion-planting trio that sustained Pueblo communities along the Rio Grande for thousands of years.
+          </p>
+        </div>
+
+        <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-5 space-y-3">
+          <h3 class="text-sm font-bold text-emerald-400 uppercase tracking-wide">3. The Chile Crown Jewel</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Held every September during peak harvest, the New Mexico State Fair Chile Competition awards the coveted <strong>First Place Blue Ribbons</strong>. Judged on pod length, thick meaty walls, and heat balance, these winning pods set the gold standard for the entire state's roasting season.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Narrative Voiceover Script Additions -->
     <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-6">
       <div class="border-b border-slate-800 pb-4">
         <h2 class="text-xl font-bold text-white">Full Voiceover Script & Educational Narration Guide (10:00 Cut)</h2>
-        <p class="text-sm text-slate-400 mt-1">Word-for-word cues for the expanded historical prologue and red sauce deep-dive:</p>
+        <p class="text-sm text-slate-400 mt-1">Word-for-word cues for the expanded historical prologue, State Fair, and red sauce deep-dive:</p>
       </div>
 
       <div class="space-y-4 text-xs md:text-sm text-slate-300 leading-relaxed font-mono bg-slate-950/70 p-5 rounded-xl border border-slate-800">
         <p><strong class="text-amber-400">[Prologue — Terroir & Heritage (0:00 - 1:45)]:</strong> "Why does chile grow so well here in New Mexico? It comes down to a unique terroir found nowhere else on earth: over 300 days of blistering desert sun, rich volcanic river soils along the Rio Grande, and dramatic 35-degree drops between hot days and cool desert nights that force the pods to pack in sugars and intense capsaicin heat... In 1913, Dr. Fabián García bred the historic 'New Mexico No. 9'—the ancestor of all modern Hatch chile, giving it the thick, tender flesh that makes it the holy grail for making authentic Chile Rellenos."</p>
+        <p><strong class="text-blue-400">[Act 1 — The State Fair & Harvest (1:45 - 2:45)]:</strong> "Every September, thousands gather for the New Mexico State Fair. State fairs began in the 1800s as agricultural expositions—the vital gathering ground where farmers brought their harvest to be judged and traded heirloom seeds. You see that living heritage inside the Agriculture Building: giant Atlantic pumpkins, five-foot long squash, and ceremonial baskets of heirloom Pueblo flint corn. And of course, the crown jewel is the Chile Competition, where growers compete for First Place Blue Ribbons, sparking the statewide roasting season."</p>
         <p><strong class="text-emerald-400">[Act 4 — Red Sauce Styles & South Africa Guide (5:15 - 7:00)]:</strong> "Every good New Mexican relleno needs a sauce that honors the chile. You'll find two main schools of thought: the traditional northern New Mexico Roux method, where flour is browned in lard with pure red chile powder and broth for a rich gravy... and the whole baked pod and tomatillo method we're doing today, which relies on baked Hatch pods and the natural acidity of fresh tomatillos for a bright, naturally gluten-free sauce. If you don't have Hatch chiles in the US, use Anaheim or Poblano peppers. And if you're watching in South Africa, where supermarkets only have bell peppers, jalapeños, and blazing hot bird's eye chillies: char a green bell pepper on your braai coals or gas stove and peel it. Then roast a jalapeño—which matches the exact heat of medium Hatch chile—and tuck a strip inside the bell pepper with your South African Gouda! For your red sauce, use Robertsons mild paprika in a classic roux for that rich red chile flavor without needing imported pods!"</p>
       </div>
     </section>
@@ -2450,8 +2652,10 @@
           card.style.display = 'block';
         } else if (type === 'history') {
           card.style.display = (st === 'history') ? 'block' : 'none';
+        } else if (type === 'fair') {
+          card.style.display = (st === 'fair') ? 'block' : 'none';
         } else if (type === 'keep') {
-          card.style.display = (st === 'keep' || st === 'trim' || st === 'history') ? 'block' : 'none';
+          card.style.display = (st === 'keep' || st === 'trim' || st === 'history' || st === 'fair') ? 'block' : 'none';
         } else if (type === 'remove') {
           card.style.display = (st === 'remove') ? 'block' : 'none';
         }
