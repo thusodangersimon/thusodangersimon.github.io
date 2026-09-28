@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentic New Mexican Chile Rellenos Recipe | Global & South Africa Guide</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    h1, h2, h3, .serif-font { font-family: 'Playfair Display', Georgia, serif; }
+    .toggle-active { background-color: #f59e0b; color: #0f172a; font-weight: 700; }
+    .toggle-inactive { background-color: transparent; color: #94a3b8; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen antialiased selection:bg-amber-500 selection:text-slate-950">
+
+  <!-- Sticky Navigation Header -->
+  <header class="border-b border-slate-800/80 bg-slate-900/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 text-sm font-semibold text-slate-200 hover:text-amber-400 transition">
+        <span>🌶️</span>
+        <span class="hidden sm:inline">Chile Rellenos Project</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">← Back to Storyboard</span>
+      </a>
+      <div class="flex items-center gap-3">
+        <span class="text-xs text-slate-400 hidden md:inline">Director's Companion Recipe</span>
+        <button onclick="window.print()" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+          🖨️ Print Recipe
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-8 md:py-12 space-y-10">
+
+    <!-- Hero Card -->
+    <div class="relative rounded-3xl overflow-hidden border border-amber-900/40 bg-gradient-to-b from-amber-950/20 via-slate-900/60 to-slate-900 p-6 md:p-10 shadow-2xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/30 mb-4">
+        <span>🌶️ Hatch Valley Heritage • Crisp Soufflé Egg Batter</span>
+      </div>
+      <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+        How to Cook <span class="text-amber-400 italic">NM Style</span> Chile Rellenos
+      </h1>
+      <p class="text-slate-300 text-base md:text-lg mt-3 max-w-2xl leading-relaxed">
+        Fire-roasted green chile pods stuffed with molten cheese, blanketed in a traditional airy egg-white soufflé cloud, fried to golden perfection, and smothered in homemade baked red sauce.
+      </p>
+
+      <!-- Key Recipe Stats -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8 pt-6 border-t border-slate-800/80">
+        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 text-center">
+          <span class="text-xs text-slate-400 block font-medium">Prep Time</span>
+          <span class="text-lg font-bold text-white">35 mins</span>
+        </div>
+        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 text-center">
+          <span class="text-xs text-slate-400 block font-medium">Cook Time</span>
+          <span class="text-lg font-bold text-white">25 mins</span>
+        </div>
+        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 text-center">
+          <span class="text-xs text-slate-400 block font-medium">Yield</span>
+          <span class="text-lg font-bold text-white">6 Rellenos</span>
+        </div>
+        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 text-center">
+          <span class="text-xs text-slate-400 block font-medium">Heat Level</span>
+          <span class="text-lg font-bold text-amber-400" id="heat-badge">Medium (1.5k SHU)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Location & Substitute Switcher -->
+    <section class="bg-slate-900 border-2 border-amber-600/40 rounded-2xl p-5 md:p-6 shadow-xl relative">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-400 block mb-1">Interactive Pantry Mode</span>
+          <h2 class="text-lg md:text-xl font-bold text-white">Choose Your Ingredients Location</h2>
+          <p class="text-xs md:text-sm text-slate-400 mt-0.5">Toggle between authentic Southwestern pantry or grocery substitutes available in South Africa (Pick n Pay, Checkers, Spar).</p>
+        </div>
+
+        <!-- Toggle Switch Pills -->
+        <div class="inline-flex rounded-xl bg-slate-950 p-1.5 border border-slate-800 self-start md:self-auto shadow-inner">
+          <button id="btn-nm" onclick="setMode('nm')" class="px-4 py-2 rounded-lg text-xs md:text-sm font-semibold transition flex items-center gap-2 toggle-active">
+            <span>🇺🇸</span>
+            <span>Authentic NM</span>
+          </button>
+          <button id="btn-sa" onclick="setMode('sa')" class="px-4 py-2 rounded-lg text-xs md:text-sm font-semibold transition flex items-center gap-2 toggle-inactive">
+            <span>🇿🇦</span>
+            <span>South Africa Hack</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Substitute Notice Banner -->
+      <div id="sa-explainer" class="hidden mt-4 pt-4 border-t border-slate-800/80 bg-amber-950/20 p-4 rounded-xl border border-amber-600/30 text-xs md:text-sm leading-relaxed text-amber-200">
+        <strong>🇿🇦 The South African Produce Solution:</strong> Local supermarkets do not carry New Mexican Hatch chiles. You'll only find sweet green bell peppers (0 heat), jalapeños (2,500–5,000 Scoville), and African bird's eye chillies (100,000+ Scoville — far too spicy to stuff). 
+        <br><br>
+        <span class="font-semibold text-white">The Proven Hack:</span> Char sweet green bell peppers directly over hot braai coals or your stovetop burner as the stuffing pod. Roast 1 jalapeño, slice into thin matchsticks, and tuck a sliver inside each pepper with South African young Gouda. This perfectly mimics the Hatch mild-to-medium heat profile!
+      </div>
+    </section>
+
+    <!-- Ingredients Checklist -->
+    <section class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <div>
+          <h2 class="text-2xl font-bold text-white">Ingredients Checklist</h2>
+          <p class="text-xs text-slate-400 mt-1">Quantities for 6 stuffed chile rellenos with rice and homemade red sauce</p>
+        </div>
+        <span class="text-xs font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-800/50 px-3 py-1 rounded-full" id="ingredients-region-badge">
+          🇺🇸 Hatch, New Mexico Pantry
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Chiles & Filling -->
+        <div class="space-y-3">
+          <h3 class="text-sm font-bold text-amber-400 uppercase tracking-wider">1. The Chiles & Filling</h3>
+          <ul class="space-y-2.5 text-sm" id="list-chiles">
+            <!-- Dynamic items populated by JS -->
+          </ul>
+        </div>
+
+        <!-- Souffle Batter & Frying -->
+        <div class="space-y-3">
+          <h3 class="text-sm font-bold text-amber-400 uppercase tracking-wider">2. Authentic Soufflé Cloud Batter</h3>
+          <ul class="space-y-2.5 text-sm" id="list-batter">
+            <!-- Dynamic items populated by JS -->
+          </ul>
+        </div>
+
+        <!-- Homemade Red Sauce -->
+        <div class="space-y-3">
+          <h3 class="text-sm font-bold text-amber-400 uppercase tracking-wider">3. Homemade Baked Red Sauce</h3>
+          <ul class="space-y-2.5 text-sm" id="list-sauce">
+            <!-- Dynamic items populated by JS -->
+          </ul>
+        </div>
+
+        <!-- Spanish Rice Side -->
+        <div class="space-y-3">
+          <h3 class="text-sm font-bold text-amber-400 uppercase tracking-wider">4. Mexican Back-Burner Rice</h3>
+          <ul class="space-y-2.5 text-sm" id="list-rice">
+            <!-- Dynamic items populated by JS -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step-by-Step Instructions -->
+    <section class="space-y-6">
+      <div class="border-b border-slate-800 pb-3">
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Step-by-Step Cooking Method</h2>
+        <p class="text-sm text-slate-400 mt-1">Follow each step in synchronization with the documentary video</p>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center text-sm">1</span>
+          <h3 class="text-lg font-bold text-white">Roast and Sweat the Chiles</h3>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed" id="step-roast">
+          Roast whole Hatch green chiles over high open flame or propane roaster tumbler until the skin blisters completely black and separates. Immediately transfer the hot pods into a plastic bag or covered bowl to steam for 15–20 minutes. The trapped steam loosens the skin so it slides off effortlessly.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center text-sm">2</span>
+          <h3 class="text-lg font-bold text-white">Peel, Slit & Stuff (Stem Intact)</h3>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed" id="step-stuff">
+          Gently slide the charred skin off with your fingers—do not rinse under water, which washes away the smoky essential oils! Leave the stem attached as a dipping handle. Cut a clean 2-inch slit down the belly and gently scrape out the placenta and seeds. Insert thick spears of Asadero cheese. Pinch the seam closed.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center text-sm">3</span>
+          <h3 class="text-lg font-bold text-white">Simmer & Blend the Red Sauce</h3>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed" id="step-sauce">
+          Husk fresh green tomatillos and rinse the sticky residue. In a skillet, combine halved tomatillos, oven-baked dried red chile pods, garlic, cumin, and chicken broth. Simmer for 10 minutes until tomatillos soften. Transfer to a blender and puree until velvety smooth. Return to the pan and keep warm.
+        </p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center text-sm">4</span>
+          <h3 class="text-lg font-bold text-white">Whip the Soufflé Cloud Batter</h3>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Separate 4 large eggs. In a spotless glass or copper bowl, beat egg whites with 1/4 tsp salt until stiff, glossy peaks form. In a separate bowl, lightly whisk the yolks. Gently fold the yolks into the whipped whites with a silicone spatula in slow figure-eight motions, preserving the airy trapped bubbles.
+        </p>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center text-sm">5</span>
+          <h3 class="text-lg font-bold text-white">Dredge, Coat & Pan-Fry at 375°F (190°C)</h3>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Heat 1.5 inches of neutral frying oil to 375°F (190°C). Lightly dust each stuffed chile in seasoned all-purpose flour (this gives the batter traction). Holding the stem handle, lower into the egg cloud batter until completely encased, then transfer directly into hot oil. Fry for 2 minutes per side until puffed and golden brown. Drain on paper towels.
+        </p>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center text-sm">6</span>
+          <h3 class="text-lg font-bold text-white">Plating & Grand Cheese Pull</h3>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Pool a generous ladle of warm homemade red sauce across the plate. Lay two golden rellenos on top. Spoon additional red sauce across the center, leaving the crispy ends visible. Serve with fresh Mexican rice, pinto beans, and a sprinkle of cheese. Cut through the center for that epic molten cheese stretch!
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ & Pro-Tips Section -->
+    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-4">
+      <h2 class="text-xl font-bold text-white">Common Questions & Pro Tips</h2>
+      <div class="space-y-3 text-sm text-slate-300">
+        <div class="border-b border-slate-800/80 pb-3">
+          <span class="font-semibold text-amber-400">Q: Why did my batter slide off in the oil?</span>
+          <p class="text-slate-400 mt-1">The chile pods were either too wet or you skipped the flour dusting. Pat the chiles completely dry with paper towels, and dust with flour right before dipping into the egg cloud.</p>
+        </div>
+        <div class="border-b border-slate-800/80 pb-3">
+          <span class="font-semibold text-amber-400">Q: Can I bake them instead of frying?</span>
+          <p class="text-slate-400 mt-1">Authentic New Mexican rellenos require hot oil to flash-cook the delicate egg white soufflé before it deflates. If you want oven finish, fry them for 90 seconds to set the crust, then transfer to a 375°F (190°C) oven for 5 minutes to melt the cheese.</p>
+        </div>
+        <div>
+          <span class="font-semibold text-amber-400">Q: What is "Christmas Style"?</span>
+          <p class="text-slate-400 mt-1">In New Mexico, when your server asks "Red or Green?", asking for "Christmas" means you get half your plate smothered in red chile sauce and the other half in green chile sauce!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Storyboard CTA -->
+    <div class="text-center py-6">
+      <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold transition shadow-lg shadow-amber-500/10">
+        <span>🎬</span>
+        <span>View Full Interactive Video Storyboard</span>
+        <span>→</span>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-950 py-6 text-center text-xs text-slate-500">
+    Crafted for Thuso Simon's New Mexican Cooking Masterclass • Hosted on GitHub Pages
+  </footer>
+
+  <script>
+    const PANTRY = {
+      nm: {
+        badge: "🇺🇸 Hatch, New Mexico Pantry",
+        heat: "Medium (1,500–2,500 SHU)",
+        chiles: [
+          "6 large fresh Hatch Green Chile pods (Big Jim or Sandia variety)",
+          "8 oz (225g) Asadero, Queso Quesadilla, or Monterey Jack cheese, sliced in 1/2-inch spears",
+          "Toothpicks (optional, to pin seam closed)"
+        ],
+        batter: [
+          "4 large eggs, whites and yolks separated",
+          "1/2 cup all-purpose flour (for dredging)",
+          "1/4 tsp kosher salt",
+          "Neutral oil for frying (Canola, Vegetable, or Avocado oil)"
+        ],
+        sauce: [
+          "6 fresh green tomatillos, husked and washed",
+          "4 dried Hatch red chile pods (stems removed)",
+          "2 cloves garlic, peeled",
+          "1 cup chicken broth or bone broth",
+          "1/2 tsp ground cumin & Mexican oregano",
+          "Salt to taste"
+        ],
+        rice: [
+          "1 cup long-grain white rice",
+          "2 tbsp vegetable oil",
+          "2 cups chicken broth",
+          "1/2 cup tomato sauce (or puree)",
+          "1/2 tsp garlic powder & Knorr Caldo de Pollo"
+        ],
+        stepRoast: "Roast whole Hatch green chiles over high open flame or propane roaster tumbler until the skin blisters completely black and separates. Immediately transfer the hot pods into a plastic bag or covered bowl to steam for 15–20 minutes. The trapped steam loosens the skin so it slides off effortlessly.",
+        stepStuff: "Gently slide the charred skin off with your fingers—do not rinse under water, which washes away the smoky essential oils! Leave the stem attached as a dipping handle. Cut a clean 2-inch slit down the belly and gently scrape out the placenta and seeds. Insert thick spears of Asadero cheese. Pinch the seam closed.",
+        stepSauce: "Husk fresh green tomatillos and rinse the sticky residue. In a skillet, combine halved tomatillos, oven-baked dried red chile pods, garlic, cumin, and chicken broth. Simmer for 10 minutes until tomatillos soften. Transfer to a blender and puree until velvety smooth. Return to the pan and keep warm."
+      },
+      sa: {
+        badge: "🇿🇦 South African Supermarket Hack (Pick n Pay / Checkers)",
+        heat: "Custom Heat Bridge (~2,000 SHU)",
+        chiles: [
+          "6 medium green sweet bell peppers (stout, flat-bottomed for stuffing)",
+          "1–2 fresh green jalapeños (roasted, deseeded, and sliced into thin matchsticks)",
+          "250g South African young Gouda or mature Cheddar, sliced into thick fingers",
+          "Toothpicks to pin seam closed"
+        ],
+        batter: [
+          "4 large free-range eggs, whites and yolks separated",
+          "1/2 cup Snowflake Cake Wheat Flour (or Maizena for light dusting)",
+          "1/4 tsp fine table salt",
+          "Sunflower oil or canola oil for shallow frying"
+        ],
+        sauce: [
+          "1 tin (400g) Rhodes chopped peeled tomatoes (or 4 fresh green tomatoes for tartness)",
+          "2 tbsp Robertsons mild Spanish paprika or smoked pimentón",
+          "1 tbsp butter + 1 tbsp flour (classic Northern NM Roux method)",
+          "1 cup Ina Paarman chicken stock",
+          "1 tsp crushed garlic & dried mixed herbs"
+        ],
+        rice: [
+          "1 cup Tastic long-grain white rice",
+          "2 tbsp sunflower oil",
+          "2 cups Knorr chicken stock",
+          "3 tbsp All Gold tomato paste",
+          "1/2 tsp Robertson garlic salt & onion powder"
+        ],
+        stepRoast: "Place whole green bell peppers and 1 whole jalapeño directly over glowing braai coals or directly over high gas burner flame on your stove. Turn frequently until the waxy skin blisters black all over. Place into a sealed plastic bag or bowl covered with clingwrap for 15 minutes to sweat.",
+        stepStuff: "Peel off the charred pepper skins gently. Keep the green pepper stem attached. Make a lengthwise slit down one side and remove seeds. Tuck 1 sliver of roasted jalapeño (the 'heat bridge') next to a thick finger of South African Gouda cheese inside each pepper. Pin with a toothpick if necessary.",
+        stepSauce: "In a saucepan, melt 1 tbsp butter, whisk in 1 tbsp flour to form a golden roux. Whisk in 2 tbsp Robertsons mild paprika and 1 cup Ina Paarman chicken stock until thickened. Stir in chopped tomatoes and garlic, simmer for 10 minutes, and blend until silky smooth."
+      }
+    };
+
+    function setMode(mode) {
+      const data = PANTRY[mode];
+      document.getElementById('ingredients-region-badge').innerText = data.badge;
+      document.getElementById('heat-badge').innerText = data.heat;
+
+      // Toggle buttons
+      const btnNm = document.getElementById('btn-nm');
+      const btnSa = document.getElementById('btn-sa');
+      const saExplainer = document.getElementById('sa-explainer');
+
+      if (mode === 'sa') {
+        btnSa.className = "px-4 py-2 rounded-lg text-xs md:text-sm font-semibold transition flex items-center gap-2 toggle-active";
+        btnNm.className = "px-4 py-2 rounded-lg text-xs md:text-sm font-semibold transition flex items-center gap-2 toggle-inactive";
+        saExplainer.classList.remove('hidden');
+      } else {
+        btnNm.className = "px-4 py-2 rounded-lg text-xs md:text-sm font-semibold transition flex items-center gap-2 toggle-active";
+        btnSa.className = "px-4 py-2 rounded-lg text-xs md:text-sm font-semibold transition flex items-center gap-2 toggle-inactive";
+        saExplainer.classList.add('hidden');
+      }
+
+      // Populate Lists
+      populateList('list-chiles', data.chiles);
+      populateList('list-batter', data.batter);
+      populateList('list-sauce', data.sauce);
+      populateList('list-rice', data.rice);
+
+      // Populate Steps
+      document.getElementById('step-roast').innerText = data.stepRoast;
+      document.getElementById('step-stuff').innerText = data.stepStuff;
+      document.getElementById('step-sauce').innerText = data.stepSauce;
+    }
+
+    function populateList(elementId, items) {
+      const el = document.getElementById(elementId);
+      el.innerHTML = items.map(item => `
+        <li class="flex items-start gap-2.5">
+          <span class="text-amber-500 font-bold mt-0.5">•</span>
+          <span class="text-slate-200">${item}</span>
+        </li>
+      `).join('');
+    }
+
+    // Initialize with NM mode
+    setMode('nm');
+  </script>
+</body>
+</html>
